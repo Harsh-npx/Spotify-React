@@ -1,0 +1,26 @@
+.sidebar_button {
+  display: flex;
+  align-items: center;
+  color: gray;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  /* border-right: 1px solid gray; */
+  transition: all 0.3s ease-in-out;
+}
+.sidebar_button:hover {
+  color: white;
+}
+.sidebar_hr {
+  background-color: gray;
+  width: 100%;
+  height: 2px;
+}
+.sidebar_playlist {
+  cursor: pointer;
+  color: gray;
+  transition: all 0.3s ease-in-out;
+}
+.sidebar_playlist:hover {
+  color: white;
+}

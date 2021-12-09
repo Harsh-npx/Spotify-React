@@ -1,0 +1,6 @@
+.index_outerdiv {
+  background-color: black;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
