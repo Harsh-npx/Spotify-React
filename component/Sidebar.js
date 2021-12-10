@@ -5,11 +5,16 @@ import LibraryMusicIcon from "@material-ui/icons/LibraryMusic";
 import PlaylistAddIcon from "@material-ui/icons/PlaylistAdd";
 import RssFeedIcon from "@material-ui/icons/RssFeed";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+import { signOut } from "next-auth/react";
 
 function Sidebar() {
   return (
     <div>
       <div>
+        <button className="sidebar_button" onClick={() => signOut()}>
+          <HomeIcon />
+          <p>Logout</p>
+        </button>
         <button className="sidebar_button ">
           <HomeIcon />
           <p>Home</p>
