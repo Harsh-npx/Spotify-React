@@ -5,9 +5,11 @@ import LibraryMusicIcon from "@material-ui/icons/LibraryMusic";
 import PlaylistAddIcon from "@material-ui/icons/PlaylistAdd";
 import RssFeedIcon from "@material-ui/icons/RssFeed";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
-import { signOut } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
 
 function Sidebar() {
+  const { data: session, status } = useSession();
+  console.log(session);
   return (
     <div>
       <div>
